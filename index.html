@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>salut</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+		integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+		crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+		integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+		crossorigin=""></script>
+  </head>
+  <body>
+    <p> hello bob </p>
+	<div id="mapid"></div>
+	<script>
+	var mymap = L.map('mapid').setView([43.588747, 1.409683], 12);
+	L.tileLayer('http://sandbox.intelligence-airbusds.com/tiles/{id}/{z}/{x}/{y}', {
+		attribution: 'salut',
+		maxZoom: 18,
+		id: 'DS_PHR1A_201408101046059_FR1_PX_E001N43_0615_01728'
+	}).addTo(mymap);
+	function onMapClick(e) {
+		alert("You clicked the map at " + e.latlng);
+	}
+	
+	
+	var marker = L.marker([43.5, 1.4]).addTo(mymap);
+	//marker.set;
+	marker.remove();
+	mymap.on('click', onMapClick);
+	</script>
+  </body>
+</html>
