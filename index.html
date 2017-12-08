@@ -15,7 +15,7 @@
   <body>
 		<header class="header-home">
 			<div class="bloc-logo">
-				<img src="" class="img-logo" alt="Logo de Crash Tracker" />
+				<img src="images/logo.png" class="img-logo" alt="Logo de Crash Tracker" />
 			</div>
 			<div class="icon-menu">
 				<i class="fa fa-cogs fa-3x btn-open"></i>
@@ -30,19 +30,235 @@
 
 			<div class="content-menu">
 				<ul>
-					<li>Yolo
+					<li>Accident
 						<ul>
-							<li>Bonjour</li>
-							<li>Aurevoir</li>
-							<li>Salut</li>
+							<li>
+								<div class="title-filtre"><label for="date">Date</label></div>
+								<div class="content-filtre">
+									[date]
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="date">Conditions d'éclairage</label>
+								</div>
+								<div class="content-filtre">
+									<select id="lum" name="lum">
+										<option value="1">Plein jour</option>
+										<option value="2">Crépuscule ou aube</option>
+										<option value="3">Nuit sans éclairage public</option>
+										<option value="4">Nuit avec éclairage public non allumé</option>
+										<option value="5">Nuit avec éclairage public allumé</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="dep">Département</label>
+								</div>
+								<div class="content-filtre">
+									<input type="number" id="dep" name="dep" />
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="com">Commune</label>
+								</div>
+								<div class="content-filtre">
+									<input type="number" id="com" name="com" />
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="agg">Localisation</label>
+								</div>
+								<div class="content-filtre">
+									<select id="agg">
+										<option value="1">Hors agglomération</option>
+										<option value="2">En agglomération</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="int">Intersection</label>
+								</div>
+								<div class="content-filtre">
+									<select id="int">
+										<option value="1">Hors intersection</option>
+										<option value="2">Intersection en X</option>
+										<option value="3">Intersection en T</option>
+										<option value="4">Intersection en Y</option>
+										<option value="5">Intersection à plus de 4 branches</option>
+										<option value="6">Giratoire</option>
+										<option value="7">Place</option>
+										<option value="8">Passage à niveau</option>
+										<option value="9">Autre intersection</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="atm">Conditions atmosphériques</label>
+								</div>
+								<div class="content-filtre">
+									<select id="atm">
+										<option value="1">Normale</option>
+										<option value="2">Pluie légère</option>
+										<option value="3">Pluie forte</option>
+										<option value="4">Neige - grêle</option>
+										<option value="5">Brouillard - fumée</option>
+										<option value="6">Vent fort - tempête</option>
+										<option value="7">Temps éblouissant</option>
+										<option value="8">Temps couvert</option>
+										<option value="9">Autre</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="col">Type de collision</label>
+								</div>
+								<div class="content-filtre">
+									<select id="col">
+										<option value="1">Deux véhicules - frontale</option>
+										<option value="2">Deux véhicules - par l'arrière</option>
+										<option value="3">Deux véhicules - par le coté</option>
+										<option value="4">Trois véhicules et plus - en chaîne</option>
+										<option value="5">Trois véhicules et plus - collisions multiples</option>
+										<option value="6">Autre collision</option>
+										<option value="7">Sans collision</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="catr">Catégorie de route</label>
+								</div>
+								<div class="content-filtre">
+									<select id="catr">
+										<option value="1">Autoroute</option>
+										<option value="2">Route nationale</option>
+										<option value="3">Route départementale</option>
+										<option value="4">Voie communale</option>
+										<option value="5">Hors réseau public</option>
+										<option value="6">Parc de stationnement ouvert à la circulation publique</option>
+										<option value="9">Autre</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="circ">Régime de circulation</label>
+								</div>
+								<div class="content-filtre">
+									<select id="circ">
+										<option value="1">A sens unique</option>
+										<option value="2">Bidirectionnelle</option>
+										<option value="3">A chaussées séparées</option>
+										<option value="4">Avec voies d'affectation variable</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="nbv">Nombre total de voies de circulation</label>
+								</div>
+								<div class="content-filtre">
+									<input type="number" id="nbv" name="nbv" />
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="vosp">Existence d'une voie réservée</label>
+								</div>
+								<div class="content-filtre">
+									<select id="vosp">
+										<option value="1">Piste cyclable</option>
+										<option value="2">Banque cyclable</option>
+										<option value="3">Voie réservée</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="prof">Déclivité de la route</label>
+								</div>
+								<div class="content-filtre">
+									<select id="prof">
+										<option value="1">Plat</option>
+										<option value="2">Pente</option>
+										<option value="3">Sommet de côte</option>
+										<option value="4">Bas de côte</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="plan">Tracé en plan</label>
+								</div>
+								<div class="content-filtre">
+									<select id="plan">
+										<option value="1">Partie rectiligne</option>
+										<option value="2">En courbe à gauche</option>
+										<option value="3">En courbe à droite</option>
+										<option value="4">En "s"</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="surf">État de la surface</label>
+								</div>
+								<div class="content-filtre">
+									<select id="surf">
+										<option value="1">Normale</option>
+										<option value="2">Mouillée</option>
+										<option value="3">Flaques</option>
+										<option value="4">Inondée</option>
+										<option value="5">Enneigée</option>
+										<option value="6">Boue</option>
+										<option value="7">Verglacée</option>
+										<option value="8">Corps gras - huile</option>
+										<option value="9">Autre</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="infra">Aménagement - Infrastructure</label>
+								</div>
+								<div class="content-filtre">
+									<select id="infra">
+										<option value="1">Souterrain - tunnel</option>
+										<option value="2">Pont - autopont</option>
+										<option value="3">Bretelle d'échangeur ou de raccordement</option>
+										<option value="4">Voie ferrée</option>
+										<option value="5">Carrefour aménagé</option>
+										<option value="6">Zone piétonne</option>
+										<option value="7">Zone de péage</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="situ">Situation de l'accident</label>
+								</div>
+								<div class="content-filtre">
+									<select id="situ">
+										<option value="1">Sur chaussée</option>
+										<option value="2">Sur bande d'arrêt d'urgence</option>
+										<option value="3">Sur accotement</option>
+										<option value="4">Sur trottoir</option>
+										<option value="5">Sur piste cyclable</option>
+									</select>
+								</div>
+							</li>
 						</ul>
 					</li>
-					<li>Kikoo
-						<ul>
-							<li>HEllo</li>
-							<li>World></li>
-						</ul>
-					</li>
+					
+					<li>Véhicule</li>
+					<li>Usager</li>
 				</ul>
 			</div>
 		</nav>
