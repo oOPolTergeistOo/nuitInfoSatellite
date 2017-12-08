@@ -2,28 +2,57 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>salut</title>
+		<title>Crash Tracker</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
 		integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
 		crossorigin=""/>
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-		<header>
+		<header class="header-home">
 			<div class="bloc-logo">
 				<img src="" class="img-logo" alt="Logo de Crash Tracker" />
 			</div>
 			<div class="icon-menu">
-				<i class="fa fa-cogs fa-3x"></i>
+				<i class="fa fa-cogs fa-3x btn-open"></i>
 			</div>
 		</header>
+
+		<nav class="main-menu">
+			<div class="header-menu">
+				<div class="title-menu">Informations à afficher</div>
+				<div class="close-menu"><i class="fa fa-close fa-2x btn-close"></i></div>
+			</div>
+
+			<div class="content-menu">
+				<ul>
+					<li>Yolo
+						<ul>
+							<li>Bonjour</li>
+							<li>Aurevoir</li>
+							<li>Salut</li>
+						</ul>
+					</li>
+					<li>Kikoo
+						<ul>
+							<li>HEllo</li>
+							<li>World></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
 		<div id="mapid"></div>
 
 	<!-- JAVASCRIPT -->
 	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
 	 crossorigin=""></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
 		var mymap = L.map('mapid').setView([43.588747, 1.409683], 12);
 		L.tileLayer('http://sandbox.intelligence-airbusds.com/tiles/{id}/{z}/{x}/{y}', {
@@ -41,5 +70,6 @@
 		marker.remove();
 		mymap.on('click', onMapClick);
 	</script>
+	<script src="js/script.js"></script>
   </body>
 </html>
