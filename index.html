@@ -257,7 +257,136 @@
 						</ul>
 					</li>
 					
-					<li>Véhicule</li>
+					<li>Véhicule
+						<ul>
+							<li>
+								<div class="title-filtre">
+									<label for="catv">Catégorie du véhicule</label>
+								</div>
+								<div class="content-filtre">
+									<select id="catv">
+										<option value="1">Bicyclette</option>
+										<option value="2">Cyclomoteur <50cm3</option>
+										<option value="3">Voiturette</option>
+										<option value="4">Scooter immatriculé</option>
+										<option value="5">Motocyclette</option>
+										<option value="6">Side-car</option>
+										<option value="7">VL seul</option>
+										<option value="8">VL + caravane</option>
+										<option value="9">VL + remorque</option>
+										<option value="10">VU seul 1,5T <= PTAC <= 3,5T avec ou sans remorque</option>
+										<option value="11">VU (10) + caravane</option>
+										<option value="12">VU (10) + remorque</option>
+										<option value="13">PL seul 3,5Y < PTCA <= 7,5T</option>
+										<option value="14">PL seul > 7,5T</option>
+										<option value="15">PL > 3,5T + remorque</option>
+										<option value="16">Tracteur routier seul</option>
+										<option value="17">Tracteur routier + semi-remorque</option>
+										<option value="18">Transport en commun</option>
+										<option value="19">Tramway</option>
+										<option value="20">Engin spécial</option>
+										<option value="21">Tracteur agricole</option>
+										<option value="30">Scooter < 50 cm3</option>
+										<option value="31">Motocyclette > 50 cm3 et <= 125 cm3</option>
+										<option value="32">Scooter > 50 cm3 et <= 125 cm3</option>
+										<option value="33">Motocyclette > 125 cm3</option>
+										<option value="34">Scooter > 125 cm3</option>
+										<option value="35">Quad léger <= 50cm3</option>
+										<option value="36">Quad lourd > 50 cm3</option>
+										<option value="37">Autobus</option>
+										<option value="38">Autocar</option>
+										<option value="39">Train</option>
+										<option value="40">Tramway</option>
+										<option value="99">Autre véhicule</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="obs">Obstable heurté</label>
+								</div>
+								<div class="content-filtre">
+									<select id="obs">
+										<option value="1">Véhicule de stationnement</option>
+										<option value="2">Arbre</option>
+										<option value="3">Glissière métallique</option>
+										<option value="4">Glissière béton</option>
+										<option value="5">Autre glissière</option>
+										<option value="6">Bâtiment, mur, pile de pont</option>
+										<option value="7">Support de signalisation verticale ou poste d'appel d'urgence</option>
+										<option value="8">Poteau</option>
+										<option value="9">Mobilier urbain</option>
+										<option value="10">Parapet</option>
+										<option value="11">Ilot, refuse, borne haute</option>
+										<option value="12">Bordure de trottoir</option>
+										<option value="13">Fossé, talus, paroi rocheuse</option>
+										<option value="14">Autre obstacle fixe sur chaussée</option>
+										<option value="15">Autre obstacle fixe sur trottoir ou accotement</option>
+										<option value="16">Sortie de chaussée sans obstable</option>
+										<option value="17">Piéton</option>
+										<option value="18">Véhicule</option>
+										<option value="19">Véhicule sur rail</option>
+										<option value="20">Animal domestique</option>
+										<option value="21">Animal sauvage</option>
+										<option value="22">Autre</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="manv">Manœuvre</label>
+								</div>
+								<div class="content-filtre">
+									<select id="manv">
+										<optgroup label="Manœuvre principale avant l'accident">
+											<option value="1">Sans changement de direction</option>
+											<option value="2">Même sens, même file</option>
+											<option value="3">Entre 2 files</option>
+											<option value="4">En marche arrière</option>
+											<option value="5">A contresens</option>
+											<option value="6">En franchissant le terre-plein central</option>
+											<option value="7">Dans le couloir bus, dans le même sens</option>
+											<option value="8">Dans le couloir bus, dans le sens inverse</option>
+											<option value="9">En s'insérant</option>
+											<option value="10">En faisant demi-tour sur la chaussée</option>
+										</optgroup>
+										<optgroup label="Changeant de file">
+											<option value="11">A gauche</option>
+											<option value="12">A droite</option>
+										</optgroup>
+										<optgroup label="Déporté">
+											<option value="13">A gauche</option>
+											<option value="14">A droite</option>
+										</optgroup>
+										<optgroup label="Tournant">
+											<option value="15">A gauche</option>
+											<option value="16">A droite</option>
+										</optgroup>
+										<optgroup label="Dépassant">
+											<option value="17">A gauche</option>
+											<option value="18">A droite</option>
+										</optgroup>
+										<optgroup label="Divers">
+											<option value="19">Traversant la chaussée</option>
+											<option value="20">Manœuvre de stationnement</option>
+											<option value="21">Manœuvre d'évitement</option>
+											<option value="22">Ouverture de porte</option>
+											<option value="23">Arrêté (hors stationnement)</option>
+											<option value="24">En stationnement (avec occupants)</option>
+										</optgroup>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="title-filtre">
+									<label for="occutc">Nombre d'occupants dans le transport en commun</label>
+								</div>
+								<div class="content-filtre">
+									<input type="number" id="occutc" name="occutc" />
+								</div>
+							</li>
+						</ul>
+					</li>
 					<li>Usager</li>
 				</ul>
 			</div>
