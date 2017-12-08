@@ -6,7 +6,7 @@ html {
     border: 0;
     top: 0;
     left: 0;
-    background-color: red;
+    background-color: #fff;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -46,18 +46,11 @@ html {
 /* #menu mobile*/
 
 .main-menu {
-    position: absolute;
-    z-index: 9999;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100vh;
+    top: 75px;
+    float: right;
+    width: 25%;
+    height: calc(100vh-75px);
     background-color: #e2e2e2;
-    transition: all 0.5s;
-}
-
-.main-menu.open {
-    left: 0;
 }
 
 .main-menu .header-menu {
@@ -82,6 +75,7 @@ html {
     text-align: center;
     float: left;
     color: #3a3a3a;
+    display: none;
 }
 
 .main-menu .header-menu .close-menu i {
@@ -90,6 +84,5 @@ html {
 
 #mapid {
     height: calc(100vh - 75px);
-    width: 100%;
-    clear: both;
+    width: 75%;
 }
