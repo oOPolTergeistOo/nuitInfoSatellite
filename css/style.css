@@ -10,7 +10,6 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-
 /* #header */
 
 .header-home {
@@ -78,6 +77,10 @@ html {
     text-align: center;
     float: left;
     color: #3a3a3a;
+}
+
+.main-menu .header-menu .close-menu i {
+    cursor: pointer;
 }
 
 #mapid {
