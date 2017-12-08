@@ -387,7 +387,153 @@
 							</li>
 						</ul>
 					</li>
-					<li>Usager</li>
+					<li>Usager
+						<ul>
+							<li>
+								<div class="title-filtre">
+									<label for="place">Place occupée par l'usager</label>
+								</div>
+								<div class="content-filtre">
+									<input type="number" id="place" name="place" max="9" min="1" />
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="title-filtre">
+							<label for="catu">Catégorie d'usager</label>
+						</div>
+						<div class="content-filtre">
+							<select id="catu">
+								<option value="1">Conducteur</option>
+								<option value="2">Passager</option>
+								<option value="3">Piéton</option>
+								<option value="4">Piéton en roller ou en trottinette</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<div class="title-filtre">
+							<label for="grav">Gravité de l'accident</label>
+						</div>
+						<div class="content-filtre">
+							<select id="grav">
+								<option value="1">Indemne</option>
+								<option value="2">Tué</option>
+								<option value="3">Blessé hospitalisé</option>
+								<option value="4">Blessé léger</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<div class="title-filtre">
+							<label for="sexe">Sexe de l'usager</label>
+						</div>
+						<div class="content-filtre">
+							<select id="sexe">
+								<option value="1">Masculin</option>
+								<option value="2">Féminin</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<div class="title-filtre">
+							<label for="age">Âge</label>
+						</div>
+						<div class="content-filtre">
+							<input type="number" id="age" name="age" min="0" />
+						</div>
+					</li>
+					<li>
+						<div class="title-filtre">
+							<label for="trajet">Motif du déplacement</label>
+						</div>
+						<div class="content-filtre">
+							<select id="trajet">
+								<option value="1">Domicile - Travail</option>
+								<option value="2">Domicile - École</option>
+								<option value="3">Courses - Achats</option>
+								<option value="4">Utilisation professionnelle</option>
+								<option value="5">Promenade - Loisirs</option>
+								<option value="9">Autre</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<div class="title-filtre">
+							<label for="secu">Équipement de sécurité</label>
+						</div>
+						<div class="content-filtre">
+							<select id="secu">
+								<option value="1">Ceinture</option>
+								<option value="2">Casque</option>
+								<option value="3">Dispositif enfants</option>
+								<option value="4">Équipement réfléchissant</option>
+								<option value="9">Autre</option>
+							</select>
+							<select id="secu_uti">
+								<option value="1">Oui</option>
+								<option value="2">Non</option>
+								<option value="3">Non déterminable</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<div class="title-filtre">
+							<label for="locp">Localisation du piéton</label>
+						</div>
+						<div class="content-filtre">
+							<select id="locp">
+								<optgroup label="Sur chaussée">
+									<option value="1">A + 50 m du passage piéton</option>
+									<option value="2">A - 50 m du passage piéton</option>
+								</optgroup>
+								<optgroup label="Sur passage piéton">
+									<option value="3">Sans signalisation lumineuse</option>
+									<option value="4">Avec signalisation lumineuse</option>
+								</optgroup>
+								<optgroup label="Divers">
+									<option value="5">Sur trottoir</option>
+									<option value="6">Sur accotement</option>
+									<option value="7">Sur refuse ou BAU</option>
+									<option value="8">Sur contre allée</option>
+								</optgroup>
+							</select>
+						</div>
+					</li>
+					<li>
+						<div class="title-filtre">
+							<label for="actp">Action du piéton</label>
+						</div>
+						<div class="content-filtre">
+							<select id="actp">
+								<optgroup label="Se déplaçant">
+									<option value="0">Non renseigné ou sans objet</option>
+									<option value="1">Sens véhicule heurtant</option>
+									<option value="2">Sens inverse du véhicule</option>
+								</optgroup>
+								<optgroup label="Divers">
+									<option value="3">Traversant</option>
+									<option value="4">Masqué</option>
+									<option value="5">Jouant - courant</option>
+									<option value="6">Avec animal</option>
+									<option value="9">Autre</option>
+								</optgroup>
+							</select>
+						</div>
+					</li>
+					<li>
+						<div class="title-filtre">
+							<label for="etatp">État du piéton</label>
+						</div>
+						<div class="content-filtre">
+							<select id="etatp">
+								<option value="1">Seul</option>
+								<option value="2">Accompagné</option>
+								<option value="3">En groupe</option>
+							</select>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</nav>
