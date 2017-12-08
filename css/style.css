@@ -10,6 +10,12 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
 
 /* #header */
 
@@ -49,7 +55,7 @@ html {
     top: 75px;
     float: right;
     width: 25%;
-    height: calc(100vh-75px);
+    height: calc(100vh - 75px);
     background-color: #e2e2e2;
 }
 
@@ -80,6 +86,58 @@ html {
 
 .main-menu .header-menu .close-menu i {
     cursor: pointer;
+}
+
+.main-menu .content-menu {
+    height: calc(100vh - 161px);
+    overflow: auto;
+    padding: 0px 15px 25px 15px;
+}
+
+.main-menu .content-menu .filtre {
+    text-transform: uppercase;
+    color: #3a3a3a;
+    font-weight: 700;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 5px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.main-menu .content-menu select,
+.main-menu .content-menu input {
+    border: 1px solid #dadada;
+    padding: 7px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px;
+    max-width: 100%;
+    margin-left: 35px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.main-menu .content-menu .filtre:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f013";
+    margin-right: 15px;
+}
+
+.main-menu .content-menu ul li {
+    list-style: none;
+}
+
+.main-menu .content-menu ul li ul li .title-filtre {
+    margin-bottom: 3px;
+    margin-top: 7px;
+    color: #3a3a3a;
+    font-weight: 700;
+}
+
+.main-menu .content-menu ul li ul li .title-filtre::before {
+    content: "\f105";
+    font: normal normal normal 14px/1 FontAwesome;
+    margin-right: 10px;
 }
 
 #mapid {
